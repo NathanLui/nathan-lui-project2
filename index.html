@@ -7,22 +7,115 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Bar-One</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><h3>Bar-One</h3></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Bar-One</h1>
-        <h2>Place to be is</h2>
+        <div class="main-background">
+            <div class="main-container">
+                <nav>
+                    <ul class="nav-container">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#bar-one" id="logo">Bar-One</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><i class="fas fa-bars"></i></li>
+                    </ul>
+                    
+                </nav>
+                <div class="main-logo">
+                    <h1>Bar-One</h1> 
+                    <h2>Place to be is</h2>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="assets/header-box.jpg"  alt="">
+            </div>
+        </div>
     </header>
+    
+    <main>
+        <section class="about" id="about">
+            <div class="about-container wrapper">
+                <div class="about-section about-section-1">
+                    <h2><i class="fas fa-home"></i> New Space</h2>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                </div>
+                <div class="about-section about-section-2">
+                    <h2><i class="fas fa-users"></i> Community</h2>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                    sem, sit amet imperdiet dolor placerat.</p>
+                </div>
+                <div class="about-section about-section-3">
+                    <h2><i class="fas fa-file"></i> Blog</h2>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                    sem, sit amet imperdiet dolor placerat.</p>
+                </div>
+                <div class="about-section about-section-4">
+                    <h2><i class="fas fa-phone"></i> Get in Touch</h2>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                    sem, sit amet imperdiet dolor placerat.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="locations" id="bar-one">
+                    <div class="image-left">
+                        <img src="assets/left-image.jpg" alt="">
+                    </div>
+                    <div class="text-right">
+                        <h2>Plan ahead</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vesibulum lacus tristique eu. Sed urna ex porttitor nec iaculis at.</p>
+                        <button>Read More</button>
+                    </div>
+                <div class="text-image-container">
+                    <div class="text-left">
+                        <h2>New locations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vesibulum lacus tristique eu. Sed urna ex porttitor nec iaculis at.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="image-right">
+                        <img src="assets/right-image.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+       
+        <section class="party-section">
+                <div class="party-text"> 
+                    <h2>Want to host a party?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felix in lacinia porttitor, tortor metus convallis augue, at fermentum</p>
+                    <button>Find Out More</button>
+                </div> 
+                <div>
+                    <img src="assets/banner-image.jpg" alt="">
+                </div>   
+        </section>
+
+        <section class="event-section">
+           <div class="wrapper event-container">
+                <div class="event-image">
+                    <img src="assets/small-box-image.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulnivar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdumb orci quis convallis.</p>
+                    <button>Find Out More</button>
+                </div>
+            </div>
+            <div class="gallery-section">
+                <div class="gallery wrapper">
+                    <img src="assets/gallery-image-1.jpg" class="gallery-item " alt="">
+                    <img src="assets/gallery-image-2.jpg" class="gallery-item gallery-item-2" alt="">
+                    <img src="assets/gallery-image-3.jpg" class="gallery-item" alt="">    
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Copyright &copy; 2019 HackerYou<p>
+        </footer>
+    </main>
 </body>
 </html>
