@@ -43,6 +43,10 @@
     }
 }
 
+.form-flexbox {
+    width: 80%;
+}
+
 .social-icons {
     display: flex;
     list-style: none;
@@ -67,18 +71,17 @@
     bottom: 200px;
 
     textarea {
-        width: 100%;
         border: 2px solid $font-color;
         background: $secondary;
         margin: 5% 0;
         padding-left: 3%;
         color: $font-color;
         font-size: 4rem;
-        resize: none;
+        width: 100%;
     }
 
     button {
-        width: 90%;
+        width: 100%;
         margin: 0;
         margin-bottom: 5%;
     }
@@ -95,19 +98,79 @@
 }
 
 .contact-info {
-    width: 90%;
+    width: 100%;
 }
 .contact-info input {
-    width: 48%;
+    width: 49%;
     background: $secondary;
     border: none;
     border-bottom: 2px solid $font-color;
-    height: 150px;
+    height: 100px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 1080px) {
+    .contact-form {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-flexbox {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 5% -5% 0%;
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials p {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 720px) {
+    .socials i {
+        font-size: 2.5rem;
+    }
+
+    .socials p {
+        font-size: 3.5rem;
+        line-height: 32px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-background h1 {
+        margin-left: 10vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        box-shadow: none;
+    }
+
+    .form-flexbox {
+    width: 95%;
+}
 }
 

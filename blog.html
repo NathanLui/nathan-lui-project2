@@ -13,28 +13,29 @@
 <body>
    <header>
        <div class="blog-background">
-            <div class="blog-container">
-                <nav>
-                    <ul class="nav-container">
+                <nav class="blog-nav nav-list">
+                    <ul class="nav-container nav-list open">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#bar-one" id="logo">Bar-One</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#bar-one" id="logo">Bar-One</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    </ul>  
                 </nav>
+                   <div class="menuToggle">
+                        <div class="hamburger"></div>
+                    </div>
                 <h1>Blog</h1>
                 <div class="blog-header-image">
-                    <img src="assets/post-image.png" alt="">
+                    <img src="assets/post-image.png" alt="a variety of entrees">
                 </div>
-            </div>
         </div>
     </header>
     <main>
         <div class="flex-container">
             <aside class="sidebar">
                 <div class="sidebar-image">
-                    <img src="assets/sidebar-image.jpg" alt="">
+                    <img src="assets/sidebar-image.jpg" alt="a pint of beer on tap">
                 </div>
                 <div class="sidebar-text">
                     <div class="mission">
@@ -69,7 +70,7 @@
                         <h2>Comments:</h2>
                         <div class="comment-1">
                             <div class=comment-image>
-                                <img src="assets/comment-image-1.jpg" alt="">
+                                <img src="assets/comment-image-1.jpg" alt="comment profile picture">
                             </div>
                             <div class="comment-text">
                                 <h3>Tuesday October 9th, 2019 by Sulaire</h3>
@@ -78,7 +79,7 @@
                         </div>
                         <div class="comment-2">
                             <div class=comment-image>
-                            <img src="assets/comment-image-2.jpg" alt="">
+                            <img src="assets/comment-image-2.jpg" alt="comment profile picture">
                             </div>
                             <div class="comment-text">
                                 <h3>Wednesday October 10th, 2019 by Renzo</h3>
@@ -105,5 +106,19 @@
     <footer>
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script>
+        $('.menuToggle').click(function () {
+            $('ul').toggleClass('opening');
+            $(this).toggleClass('open');
+        })
+
+        $("a").click(function () {
+            $('ul').removeClass("opening");
+            $('.menuToggle').toggleClass('open');
+        });
+    </script>
 </body>
 </html>
