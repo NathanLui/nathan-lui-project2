@@ -13,6 +13,7 @@
     background: $accent-2;
     padding: 2%;
     border-radius: 50%;
+    flex-basis: fit-content;
 }
 
 .about-container {
@@ -59,9 +60,6 @@
         font-size: 4rem;
     }
 
-    // .about {
-    //     margin-bottom: 10%;
-    // }
 }
 
 @media (max-width: 500px) {
@@ -74,11 +72,6 @@
     .about p {
         line-height: 25px;
         padding: 3%;
-        text-align: center;
-    }
-
-    .about h2 {
-        text-align: center;
     }
 
     .about-section-3 h2{
